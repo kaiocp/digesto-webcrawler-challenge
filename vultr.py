@@ -12,7 +12,7 @@ def list_cleaner(item):
 
 
 def to_matrix(list, n):
-    """Transforms one dimension lists into dimension lists"""
+    """Transforms one dimension lists into two dimension lists"""
     return [list[i:i+n] for i in range(0, len(list), n)]
 
 
@@ -79,8 +79,26 @@ regular_performance_df.insert(1, 'Subtype', '')
 
 # concatenating all dfs
 vultr_df = pd.concat([amd_df, intel_df, high_frequency_df, regular_performance_df], ignore_index=True)
-vultr_df = vultr_df.iloc[: , :-1] # dropping hourly price
+vultr_df = vultr_df.iloc[:, :-1] # dropping hourly price
 
-with pd.option_context('display.max_rows', None, 'display.max_columns', None):
-    print(vultr_df)
+# user interaction
+crawler_execution_text = """Crawler executado com sucesso.
+O que deseja fazer?
+--print
+--save_csv
+--save_json
+Digite a opção desejada: """
 
+if r.ok: # checks if http response == 200
+    answer = input(crawler_execution_text)
+    if answer == "--print":
+        with pd.option_context('display.max_rows', None, 'display.max_columns', None):
+            print(vultr_df)
+    elif answer == "--save_csv":
+        vultr_df.to_csv('vultr.csv', index=False)
+    elif answer == "--save_json":
+        vultr_df.to_json('vultr.json', orient="table")
+    else:
+        print("Resposta inválida")
+else:
+    print('Página indisponível no momento.')
