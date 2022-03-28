@@ -6,7 +6,7 @@ from collections import OrderedDict
 
 
 def list_cleaner(item):
-    """"Removes special characters and blank spaces from a list of strings"""
+    """Removes special characters and blank spaces from a list of strings"""
     cleaned_item = re.sub('\n|\t', '', item).strip()
     return cleaned_item
 
