@@ -1,16 +1,15 @@
 # digesto-webcrawler-challenge
 
-Este projeto corresponde a uma etapa para o processo seletivo para estagiáiro na Jusbrasil. O objetivo era desenvolver dois crawlers para as seguintes páginas-alvo:
+Este projeto corresponde a uma etapa do processo seletivo para estagiáiro na Jusbrasil. O objetivo consistia em desenvolver dois crawlers para as seguintes páginas-alvo:
 
-1. https://www.vultr.com/products/cloud-compute/#pricing (apenas SSDCloud
-Instances)
+1. https://www.vultr.com/products/cloud-compute/#pricing (apenas SSDCloud Instances)
 2. https://www.digitalocean.com/pricing/ (apenas tabela Basic droplets)
 
-O crawler deveria ainda ter as funcionalidades de imprimir na tela (--print), salvar como .csv (--save_csv) e salvar como .json (--save_json).
+Os crawlers deveriam ainda ter as funcionalidades de imprimir na tela, salvar como .csv e salvar como .json.
 
 ## Começando
 
-Para executar o projeto é preciso ter o Python 3 instalado. Além disso, é necessário instalar os módulos utilizados utilizando o comando ```pip install -r requirements.txt```
+Para o funcionamento do programa é preciso ter o Python 3 instalado. Além disso, é necessário instalar as bibliotecas utilizadas com o comando ```pip install -r requirements.txt```
 
 ## Execução
 
