@@ -1,6 +1,6 @@
 # digesto-webcrawler-challenge
 
-Este projeto corresponde a uma etapa do processo seletivo para estagiáiro na Jusbrasil. O objetivo consistia em desenvolver dois crawlers para as seguintes páginas-alvo:
+Este projeto corresponde a uma etapa do processo seletivo para estagiáiro na Jusbrasil. O objetivo consistia em desenvolver um webcrawler para as seguintes páginas-alvo:
 
 1. https://www.vultr.com/products/cloud-compute/#pricing (apenas SSDCloud Instances)
 2. https://www.digitalocean.com/pricing/ (apenas tabela Basic droplets)
