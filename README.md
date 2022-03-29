@@ -13,7 +13,7 @@ Para o funcionamento do programa é preciso ter o Python 3 instalado. Além diss
 
 ## Execução
 
-Clone o repositório em um diretório de sua preferência e então ```git clone https://github.com/kaiocp/digesto-webcrawler-challenge```
+Clone o repositório em um diretório de sua preferência com o comando ```git clone https://github.com/kaiocp/digesto-webcrawler-challenge```
 
 Para executar o programa ```python3 main.py```
 
